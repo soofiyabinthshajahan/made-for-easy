@@ -36,7 +36,7 @@ function App() {
   return (
     <Wrapper>
       <Title>Welcome to MadeForEasy</Title>
-      <Subtitle>Inshallah We will be officially starting on <strong>July 7</strong>!</Subtitle>
+      <Subtitle>Inshallah We will be officially starting on <strong>AUGUST 1</strong>!</Subtitle>
       <Note>Stay tuned — simplicity in healthcare is on its way.</Note>
     </Wrapper>
   );
