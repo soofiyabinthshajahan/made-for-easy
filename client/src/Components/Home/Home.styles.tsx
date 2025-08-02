@@ -8,9 +8,8 @@ export const HomePage = styled.div`
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: visible;   // This is critical
   z-index: 1;
-  overflow: hidden;
-  opacity: 1;
 
   &::before {
     content: "";
@@ -23,12 +22,13 @@ export const HomePage = styled.div`
     z-index: 2;
   }
 
-  // Place content above overlay
   > * {
     position: relative;
     z-index: 3;
   }
 `;
+
+
 
 export const Intro = styled.div`
   width:100%;
@@ -51,7 +51,7 @@ letter-spacing: 0%;
 export const Introtext = styled.p`
   color: white;
   letter-spacing: 1.5px;
-  font-family: Kanit;
+ 
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -96,7 +96,7 @@ export const IntroVideoButton = styled.button`
   justify-content: center;
   gap: 10px;
 margin-left: 83%;
-  padding: 8px 15px;
+  padding: 8px;
   border: 2px solid white;
   border-radius: 50px;
   background-color: transparent;

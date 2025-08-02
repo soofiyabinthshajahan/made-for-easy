@@ -39,6 +39,7 @@ function Home() {
         </Introtext>
       </Intro>
       <ExploreButton>Discover More About Us </ExploreButton>
+    
     </HomePage>
   );
 }

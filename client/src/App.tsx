@@ -1,14 +1,15 @@
 import React from 'react'
-// import HeaderTop from './Components/Header/HeaderTop'
 import './Global.css'
-// import Subheader from './Components/Header/Subheader'
 import Home from './Components/Home/Home'
+import LogoDisplay from './Components/LogoDisplay/LogoDisplay'
+import Presence from './Components/Presence/Presence'
 function App() {
   return (
     <div>
-      {/* <HeaderTop />
-      <Subheader/> */}
-      <Home/>
+
+      <Home />
+      <Presence/>
+      <LogoDisplay />
     </div>
   )
 }

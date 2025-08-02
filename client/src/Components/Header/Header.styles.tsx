@@ -70,7 +70,7 @@ export const Logo = styled.div`
   height: 60px;
   top: 96px;
   left: 64px;
-  /* opacity: 1; */
+  opacity: 1;
 
   background-image: url("/Static/Logo.png");
   border-radius: 50%;
