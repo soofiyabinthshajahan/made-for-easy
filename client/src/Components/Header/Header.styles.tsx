@@ -7,7 +7,7 @@ export const Header1 = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 `;
 
 export const HeaderContact = styled.div`
@@ -50,9 +50,9 @@ export const HeaderSocial = styled.div`
 `;
 
 export const Transparentheader = styled.div`
-  background: #000000ad;
+  background: #00000096;
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   display: flex;
   opacity: 1;
 `;
@@ -108,10 +108,18 @@ export const Navigation = styled.ul`
   list-style: none;
 `;
 
-export const NavElement = styled.ul`
+export const NavElement = styled.li`
   color: white;
   font-size: 18px;
+  font-weight: lighter;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
+
 
 export const ContactSection = styled.div`
   width: 30%;
@@ -121,7 +129,7 @@ justify-content: flex-end;
 
 `
 export const RegisterButton = styled.button`
-  width: 187px;
+  width: 175px;
   height: 45px;
   opacity: 1;
   border-radius: 5px;

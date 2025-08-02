@@ -17,6 +17,7 @@ function Subheader() {
                     <NavElement> Home</NavElement>
                     <NavElement>About</NavElement>
                     <NavElement>Service</NavElement>
+                    <NavElement>Career</NavElement>
                     <NavElement>Team</NavElement>
                     <NavElement>Contact</NavElement>
                 </Navigation>
