@@ -45,12 +45,12 @@ export const DateInput = styled.input.attrs({ type: "date" })`
 export const BookButton = styled.button`
   background-color: #2d3a45;
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   padding: 0.75rem 1.5rem;
   border: none;
   cursor: pointer;
   border-radius: 2px;
-  transition: background 0.2s ease;
+ letter-spacing: 1px;
 
   &:hover {
     background-color: #1f2a33;

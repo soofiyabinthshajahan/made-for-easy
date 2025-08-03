@@ -37,7 +37,7 @@ function Presence() {
           <DateInput />
         </DateField>
       ))}
-      <BookButton>Book Now</BookButton>
+      <BookButton>Bank Grade Security</BookButton>
     </PanelWrapper>
   );
 }
