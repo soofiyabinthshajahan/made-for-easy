@@ -95,7 +95,7 @@ export const SectionWrapper = styled.div`
   position: relative;
   width: 100%;
   /* max-width: 1400px; */
-  margin: 0 auto;
+  margin: 15px auto;
   /* padding: 0 16px; */
 `;
 
