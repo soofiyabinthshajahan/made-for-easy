@@ -1,6 +1,6 @@
 import React from 'react';
 import { PanelWrapper, DateField, DateInput, IconTextWrapper, BookButton } from './Presence.styles';
-import { FaMoneyCheckAlt, FaClinicMedical } from 'react-icons/fa'; 
+import {FaClinicMedical } from 'react-icons/fa'; 
 import { GiHospital,GiTestTubes } from "react-icons/gi";
 import { BsCapsulePill } from "react-icons/bs";
 
