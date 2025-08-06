@@ -5,6 +5,7 @@ import LogoDisplay from './Components/LogoDisplay/LogoDisplay'
 import Presence from './Components/Presence/Presence'
 import CEOMessage from './Components/About/CEOMessage'
 import FeaturesSection from './Components/Features/FeatureDisplay'
+import ContactForm from './Components/Contact/ContactForm'
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
       <LogoDisplay />
       <CEOMessage/>
       <FeaturesSection/>
+      <ContactForm/>
     </div>
   )
 }
