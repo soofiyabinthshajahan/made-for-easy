@@ -9,6 +9,7 @@ import ContactForm from './Components/Contact/ContactForm'
 import Footer from './Components/Footer/Footer'
 function App() {
   return (
+
     <div>
 
       <Home />
@@ -20,6 +21,7 @@ function App() {
       <Footer/>
     </div>
   )
+
 }
 
 export default App
