@@ -69,10 +69,9 @@ export const LearnMoreButton = styled.button`
   background-color: #374151;
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 16px;
   font-size: 14px;
   font-weight: 500;
-  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   text-transform: uppercase;
