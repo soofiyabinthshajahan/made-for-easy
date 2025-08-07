@@ -6,8 +6,10 @@ import Presence from './Components/Presence/Presence'
 import CEOMessage from './Components/About/CEOMessage'
 import FeaturesSection from './Components/Features/FeatureDisplay'
 import ContactForm from './Components/Contact/ContactForm'
+import Footer from './Components/Footer/Footer'
 function App() {
   return (
+
     <div>
 
       <Home />
@@ -16,8 +18,10 @@ function App() {
       <CEOMessage/>
       <FeaturesSection/>
       <ContactForm/>
+      <Footer/>
     </div>
   )
+
 }
 
 export default App
