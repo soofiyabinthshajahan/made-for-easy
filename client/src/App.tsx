@@ -12,6 +12,7 @@ function App() {
       <LogoDisplay />
     </div>
   )
+
 }
 
 export default App
