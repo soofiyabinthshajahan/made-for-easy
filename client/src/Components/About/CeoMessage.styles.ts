@@ -30,9 +30,9 @@ export const CEOImageWrapper = styled.div`
   padding-top: 125px;
 
   @media (max-width: 768px) {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 2rem;
+        padding-top: 1px;
+  
+
   }
 `;
 
@@ -41,6 +41,13 @@ export const CEOImage = styled.img`
   height: 220px;
   border-radius: 4px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  
+  @media (max-width: 768px) {
+   
+    justify-content: center;
+    margin-bottom: 8rem;
+
+  }
 `;
 
 export const CEOContent = styled.div`
