@@ -9,7 +9,9 @@ import ContactForm from './Components/Contact/ContactForm'
 import Footer from './Components/Footer/Footer'
 function App() {
   return (
-   
+   <>
+   <Home />
+   </>
   );
 }
 
