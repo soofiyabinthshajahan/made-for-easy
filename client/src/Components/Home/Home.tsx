@@ -11,14 +11,26 @@ import {
 import HeaderTop from "../Header/HeaderTop";
 import Subheader from "../Header/Subheader";
 import { FaPlay } from "react-icons/fa";
+import Presence from "../Presence/Presence";
+import LogoDisplay from "../LogoDisplay/LogoDisplay";
+import CEOMessage from "../About/CEOMessage";
+import ContactForm from "../Contact/ContactForm";
+import FeatureDisplay from "../Features/FeatureDisplay";
+import Feature from "../Features/Feature";
+import Footer from "../Footer/Footer";
 
 
 function Home() {
   return (
-    <HomePage>
-      <HeaderTop />
-      <Subheader />
+    <>
+   
+       
+   <HeaderTop />
+       
+     
 
+ <HomePage>
+  <Subheader />
       <Intro>
         <IntroVideoButton>
           <PlayCircle>
@@ -41,6 +53,14 @@ function Home() {
       <ExploreButton>Discover More About Us </ExploreButton>
     
     </HomePage>
+    <Presence />
+    <LogoDisplay />
+    <CEOMessage />
+  
+    <FeatureDisplay />
+    <ContactForm />
+    <Footer />
+    </>
   );
 }
 

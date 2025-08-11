@@ -87,6 +87,17 @@ const FeatureDisplay: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   const updateScrollButtons = () => {
     if (scrollContainerRef.current) {
@@ -107,7 +118,8 @@ const FeatureDisplay: React.FC = () => {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 336; // Card width + margin
+      const cardWidth = isMobile ? 300 : 360;
+      const scrollAmount = cardWidth + 16; // Card width + gap
       const currentScroll = scrollContainerRef.current.scrollLeft;
       const targetScroll = direction === 'left' 
         ? currentScroll - scrollAmount 

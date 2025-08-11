@@ -12,22 +12,40 @@ export const CardContainer = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin: 0 8px;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 300px;
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+     width: 380px;
+    padding: 16px;
+  }
 `;
 
 export const Icon = styled.div`
   font-size: 48px;
   color: #3b414dff;
   margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const Title = styled.h3`
   font-family: Inter;
   font-weight: 700;
-  /* font-style: Bold; */
   font-size: 22.11px;
   line-height: 100%;
   letter-spacing: 0%;
   color: black;
+  text-transform: capitalize;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const Description = styled.p`
@@ -35,6 +53,10 @@ export const Description = styled.p`
   color: #4b5563;
   line-height: 1.5;
   margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 `;
 
 export const BulletList = styled.ul`
@@ -60,6 +82,10 @@ export const BulletList = styled.ul`
       background-color: #6788f3ff;
       border-radius: 50%;
     }
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
   }
 `;
 
@@ -77,7 +103,7 @@ export const LearnMoreButton = styled.button`
   text-transform: uppercase;
   letter-spacing: 0.5px;
   align-self: flex-start;
-  margin-left: 55px;
+  margin-left: 0;
 
   &:hover {
     background-color: #1f2937;
@@ -88,20 +114,27 @@ export const LearnMoreButton = styled.button`
     width: 16px;
     height: 16px;
   }
+
+  @media (max-width: 768px) {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 `;
 
 export const SectionWrapper = styled.div`
   position: relative;
   width: 100%;
-  /* max-width: 1400px; */
   margin: 15px auto;
-  /* padding: 0 16px; */
 `;
 
 export const DisplaySection = styled.div`
   position: relative;
   overflow: hidden;
   padding: 32px 0;
+
+  @media (max-width: 768px) {
+    padding: 24px 0;
+  }
 `;
 
 export const CardsContainer = styled.div`
@@ -109,12 +142,25 @@ export const CardsContainer = styled.div`
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 0 48px;
-  gap: 0;
+  gap: 16px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+    gap: 12px;
+    scroll-padding: 0 24px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 16px;
+    gap: 8px;
+    scroll-padding: 0 16px;
   }
 `;
 
@@ -154,5 +200,21 @@ export const NavButton = styled.button<{
   svg {
     width: 24px;
     height: 24px;
+  }
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 36px;
+    height: 36px;
+    display: ${({ disabled }) => (disabled ? 'none' : 'flex')};
   }
 `;
