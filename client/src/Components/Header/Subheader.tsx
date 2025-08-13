@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Transparentheader, 
   LogoSection, 
@@ -18,7 +19,7 @@ import {
 
 const Subheader: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigate=useNavigate()
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -62,12 +63,12 @@ const Subheader: React.FC = () => {
         <NavElement onClick={toggleMenu}>Career</NavElement>
         <NavElement onClick={toggleMenu}>Team</NavElement>
         <NavElement onClick={toggleMenu}>Contact</NavElement>
-        <RegisterButton>Register</RegisterButton>
+        <RegisterButton onClick={()=>navigate('/register')}>Register</RegisterButton>
       </MobileNavigation>
       
       {/* Desktop Contact Section - hidden on mobile */}
       <ContactSection>
-        <RegisterButton>Register</RegisterButton>
+        <RegisterButton onClick={()=>navigate('/register')}>Register</RegisterButton>
       </ContactSection>
     </Transparentheader>
   );
