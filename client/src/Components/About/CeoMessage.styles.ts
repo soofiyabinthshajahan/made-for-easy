@@ -14,10 +14,12 @@ export const CEOContainer = styled.div`
   flex-direction: row;
   gap: 2rem;
   position: relative;
-
+  z-index: 1;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+      z-index: 0;
+
   }
 `;
 
@@ -31,6 +33,7 @@ export const CEOImageWrapper = styled.div`
 
   @media (max-width: 768px) {
         padding-top: 1px;
+      
   
 
   }

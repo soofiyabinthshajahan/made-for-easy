@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header1, HeaderText, HeaderContact, HeaderSocial } from './Header.styles';
+import { Header1, HeaderText, HeaderContact, HeaderSocial } from './HeaderTop.styles';
 import { MdPhoneIphone } from 'react-icons/md';
 import { BsWhatsapp, BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs";
 

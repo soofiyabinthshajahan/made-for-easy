@@ -25,11 +25,12 @@ function Home() {
     <>
    
        
-   <HeaderTop />
+ 
        
      
 
  <HomePage>
+    <HeaderTop />
   <Subheader />
       <Intro>
         <IntroVideoButton>
