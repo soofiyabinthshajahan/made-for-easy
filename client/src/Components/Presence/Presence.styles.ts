@@ -21,6 +21,8 @@ export const PanelWrapper = styled.div`
     padding: 1.5rem 0.5rem;
     margin-top: -5vh;
     gap: 1rem;
+      // z-index: 0;
+
   }
 `;
 

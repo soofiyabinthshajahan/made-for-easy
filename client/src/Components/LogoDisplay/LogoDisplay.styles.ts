@@ -14,10 +14,14 @@ export const LogoSection = styled.div`
 
   @media (max-width: 768px) {
     padding: 0.5rem 0;
+      z-index: 0;
+
   }
 
   @media (max-width: 480px) {
     padding: 0.25rem 0;
+          z-index: 0;
+
   }
 `;
 

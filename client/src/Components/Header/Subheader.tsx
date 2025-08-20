@@ -37,7 +37,13 @@ const Subheader: React.FC = () => {
       {/* Desktop Navigation */}
       <Navigationsection>
         <Navigation>
-          <NavElement>Home</NavElement>
+        <NavElement onClick={() => { 
+ 
+  navigate('/'); 
+}}>
+  Home
+</NavElement>
+
           <NavElement>About</NavElement>
           <NavElement>Service</NavElement>
           <NavElement>Career</NavElement>
@@ -57,7 +63,12 @@ const Subheader: React.FC = () => {
       
       {/* Mobile Navigation - only visible when menu is open */}
       <MobileNavigation isOpen={isMenuOpen}>
-        <NavElement onClick={toggleMenu}>Home</NavElement>
+<NavElement onClick={() => { 
+  toggleMenu(); 
+  navigate('/'); 
+}}>
+  Home
+</NavElement>
         <NavElement onClick={toggleMenu}>About</NavElement>
         <NavElement onClick={toggleMenu}>Service</NavElement>
         <NavElement onClick={toggleMenu}>Career</NavElement>
